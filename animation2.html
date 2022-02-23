@@ -1,0 +1,49 @@
+<style>
+    .kutu {
+        width: 305px;
+        height: 305px;
+        background-color: #ad6fe6;
+        transition: .5s;
+        animation: cube-animation 5s infinite;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+    }
+
+    @-webkit-keyframes cube-animation {
+        0% {
+            left: 0%;
+            top: 0%;
+            transform: translate(0%, 0%);
+        }
+
+        25% {
+            top: 0%;
+            left: 100%;
+             transform: translate(-100%, 0%); 
+        }
+
+        50% {
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%, -100%);
+        }
+
+        75% {
+            top: 100%;
+            left: 0%;
+            transform: translate(0%, -100%);
+        }
+
+        100% {
+            top: 0%;
+            left: 0%;
+            transform: translate(0%, 0%);
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="kutu"> </div>
+</body>
